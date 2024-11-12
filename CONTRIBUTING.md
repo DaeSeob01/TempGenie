@@ -12,11 +12,11 @@ Thank you for considering contributing to the TempGenie project! This guide prov
 2. Fork the project and create a new branch:
    ```bash
    git checkout -b feature/new-feature
-  or
-   git checkout -b fix/bug-fix```
+     or
+   git checkout -b fix/bug-fix
 3. Commit your changes:
    ```bash
-   git commit -m "Add new feature```
+   git commit -m "Add new feature
 4. Create a Pull Request (PR) on GitHub and wait for a review.
 
 ## Code Style
