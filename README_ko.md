@@ -1,3 +1,5 @@
+[English](README_en.md) | [Korean](README_ko.md)
+
 # TempGenie
 **임시 자격 증명을 위한 종합 솔루션**
 
