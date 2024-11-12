@@ -1,6 +1,7 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: General Question Template
+about: Ask questions about the project, its functionality, or any other relevant topics
+  to help with understanding.
 title: ''
 labels: ''
 assignees: ''

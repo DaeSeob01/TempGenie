@@ -1,6 +1,7 @@
 ---
-name: documentation_improvement
-about: Describe this issue template's purpose here.
+name: Documentation Improvement Template
+about: Suggest improvements or additions to the project documentation to make it clearer
+  and more comprehensive.
 title: ''
 labels: ''
 assignees: ''
