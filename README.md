@@ -36,7 +36,6 @@ We welcome contributions to improve TempGenie! Here’s how you can help:
 3. **Commit your changes and push the branch**:
    ```bash
    git commit -m "Add new feature"
-   ```bash
    git push origin feature/new-feature
 
    
