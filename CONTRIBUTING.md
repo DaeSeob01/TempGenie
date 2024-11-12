@@ -11,13 +11,13 @@ Thank you for considering contributing to the TempGenie project! This guide prov
 1. Check [Issues](https://github.com/DaeSeob01/TempGenie/issues) or create a new issue for features or bugs.
 2. Fork the project and create a new branch:
    ```bash
-   git checkout -b feature/new-feature```
+   git checkout -b feature/new-feature
   or
-   git checkout -b fix/bug-fix
+   git checkout -b fix/bug-fix```
 3. Commit your changes:
    ```bash
-   git commit -m "Add new feature
-4. Create a Pull Request (PR) on GitHub and wait for a review.```
+   git commit -m "Add new feature```
+4. Create a Pull Request (PR) on GitHub and wait for a review.
 
 ## Code Style
 - Follow [JavaScript Standard Style](https://standardjs.com/).
