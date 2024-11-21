@@ -42,3 +42,4 @@ We welcome contributions to improve TempGenie! Here’s how you can help:
 The full documentation for this project is hosted on ReadTheDocs:
 
 [📄 View Documentation on ReadTheDocs](https://tempg.readthedocs.io)
+- **GitHub Pages Website**: [https://daeseob01.github.io/TempGenie/](https://daeseob01.github.io/TempGenie/)
