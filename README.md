@@ -37,3 +37,8 @@ We welcome contributions to improve TempGenie! Here’s how you can help:
    ```bash
    git commit -m "Add new feature"
    git push origin feature/new-feature
+## Documentation
+
+The full documentation for this project is hosted on ReadTheDocs:
+
+[📄 View Documentation on ReadTheDocs](https://tempg.readthedocs.io)
