@@ -37,3 +37,6 @@ Our mission is to provide a single platform for generating secure, temporary cre
 - **Website Designer**: Choi Ji Won (20011828)
 - **Back-end Developer**: Jeon Young Hyun (20011811)
 - **Project Manager/Team Lead**: Shin Dae Seob (20011792)
+
+- [📄 View Documentation on ReadTheDocs](https://tempg.readthedocs.io)
+- **GitHub Pages Website**: [https://daeseob01.github.io/TempGenie/](https://daeseob01.github.io/TempGenie/)
