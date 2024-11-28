@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TempGenie - Features</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+    nav { background: #007bff; color: #fff; padding: 1rem; text-align: center; }
+    nav a { color: #ffcc00; margin: 0 1rem; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    header { padding: 2rem; text-align: center; background: #f4f4f4; }
+    header h1 { margin: 0; color: #007bff; }
+    main { padding: 2rem; }
+    footer { text-align: center; background: #333; color: #fff; padding: 1rem 0; }
+    ul { list-style: none; padding: 0; }
+    ul li { margin: 0.5rem 0; }
+    .feature-section { margin-bottom: 2rem; }
+    .feature-section h2 { color: #007bff; }
+    .feature-section p { margin: 0.5rem 0; }
+    button { padding: 0.5rem 1rem; background-color: #007bff; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+    .output { font-size: 1.2rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <header>
+    <h1>TempGenie Features</h1>
+    <p>Generate temporary credentials: emails, phone numbers, and passwords with ease.</p>
+  </header>
+  <main>
+    <!-- Temporary Email Section -->
+    <div class="feature-section">
+      <h2>Generate Temporary Email</h2>
+      <p>This feature allows you to generate a temporary email address for one-time use, perfect for registering on websites without revealing your personal email.</p>
+      <button onclick="generateTempEmail()">Generate Temporary Email</button>
+      <div class="output" id="temp-email-output"></div>
+    </div>
+
+    <!-- Temporary Phone Number Section -->
+    <div class="feature-section">
+      <h2>Generate Temporary Phone Number</h2>
+      <p>This feature provides a disposable phone number for temporary use, helping protect your privacy when verifying accounts online.</p>
+      <button onclick="generateTempPhoneNumber()">Generate Temporary Phone Number</button>
+      <div class="output" id="temp-phone-output"></div>
+    </div>
+
+    <!-- Temporary Password Section -->
+    <div class="feature-section">
+      <h2>Generate Temporary Password</h2>
+      <p>Create strong and secure passwords with the click of a button. This feature suggests a random, complex password for your accounts.</p>
+      <button onclick="generateTempPassword()">Generate Temporary Password</button>
+      <div class="output" id="temp-password-output"></div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 TempGenie. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Function to generate a temporary email
+    function generateTempEmail() {
+      const domain = "@tempmail.com";
+      const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      let email = "tempuser";
+      for (let i = 0; i < 10; i++) {
+        email += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      email += domain;
+      document.getElementById("temp-email-output").innerText = "Your temporary email: " + email;
+    }
+
+    // Function to generate a temporary phone number
+    function generateTempPhoneNumber() {
+      const countryCodes = ["+1", "+44", "+91", "+49", "+33"];
+      const areaCodes = ["201", "305", "415", "646", "323"];
+      const randomCountry = countryCodes[Math.floor(Math.random() * countryCodes.length)];
+      const randomArea = areaCodes[Math.floor(Math.random() * areaCodes.length)];
+      const phoneNumber = `${randomCountry} ${randomArea} ${Math.floor(Math.random() * 10000)}-${Math.floor(Math.random() * 10000)}`;
+      document.getElementById("temp-phone-output").innerText = "Your temporary phone number: " + phoneNumber;
+    }
+
+    // Function to generate a temporary password
+    function generateTempPassword() {
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+      let password = "";
+      for (let i = 0; i < 12; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById("temp-password-output").innerText = "Your temporary password: " + password;
+    }
+  </script>
+</body>
+</html>
