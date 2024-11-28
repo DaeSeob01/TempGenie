@@ -79,17 +79,58 @@
       color: #fff;
       padding: 1rem 0;
     }
+
+    .generator-section {
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .generator-section button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .generator-section button:hover {
+      background: #0056b3;
+    }
+
+    .output {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Welcome to TempGenie!</h1>
     <p>TempGenie is an open-source project for generating temporary data.</p>
-    <a href="https://tempg.readthedocs.io/en/latest/" target="_blank">Read the Documentation</a> |
-    <a href="https://github.com/DaeSeob01" target="_blank">Visit GitHub Repository</a>
+    <a href="https://tempgenie.readthedocs.io/en/latest/" target="_blank">Read the Documentation</a> |
+    <a href="https://github.com/YourRepoLink" target="_blank">Visit GitHub Repository</a>
   </header>
 
   <main>
+    <section class="generator-section">
+      <h2>Generate Temporary Data</h2>
+      <div>
+        <button onclick="generateEmail()">Generate Temporary Email</button>
+        <div id="emailOutput" class="output"></div>
+      </div>
+      <div>
+        <button onclick="generatePhoneNumber()">Generate Temporary Phone Number</button>
+        <div id="phoneOutput" class="output"></div>
+      </div>
+      <div>
+        <button onclick="generatePassword()">Generate Strong Password</button>
+        <div id="passwordOutput" class="output"></div>
+      </div>
+    </section>
+
     <section id="features">
       <h2>Features</h2>
       <ul>
@@ -105,7 +146,6 @@
 
       <div>
         <h3>Discussion Forums</h3>
-        <p>Connect with fellow developers and users. Share ideas, ask questions, or offer feedback in our discussion forums.</p>
         <ul>
           <li><a href="https://github.com/YourRepoLink/discussions" target="_blank">GitHub Discussions</a></li>
           <li><a href="https://discourse.yourproject.com" target="_blank">Discourse Forum</a></li>
@@ -114,29 +154,26 @@
 
       <div>
         <h3>Mailing Lists</h3>
-        <p>Stay updated with the latest announcements, release notes, and support resources by subscribing to our mailing lists.</p>
         <ul>
-          <li><a href="mailto:newsletter@tempgenie.com" target="_blank">Announcements</a>: Get notified about new features and updates.</li>
-          <li><a href="mailto:support@tempgenie.com" target="_blank">Support</a>: Reach out for help or troubleshooting assistance.</li>
+          <li><a href="mailto:newsletter@tempgenie.com" target="_blank">Announcements</a></li>
+          <li><a href="mailto:support@tempgenie.com" target="_blank">Support</a></li>
         </ul>
       </div>
 
       <div>
         <h3>Other Communication Channels</h3>
-        <p>Engage with us on social platforms and instant messaging tools to stay connected with the community.</p>
         <ul>
-          <li><a href="https://discord.com/invite/tempgenie" target="_blank">Discord</a>: Join real-time chats with the team and other users.</li>
-          <li><a href="https://slack.tempgenie.com" target="_blank">Slack</a>: Collaborate and share feedback.</li>
-          <li><a href="https://gitter.im/tempgenie/community" target="_blank">Gitter</a>: Participate in topic-specific discussions.</li>
+          <li><a href="https://discord.com/invite/tempgenie" target="_blank">Discord</a></li>
+          <li><a href="https://slack.tempgenie.com" target="_blank">Slack</a></li>
+          <li><a href="https://gitter.im/tempgenie/community" target="_blank">Gitter</a></li>
         </ul>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>If you have any questions or need assistance, feel free to reach out!</p>
       <ul>
-        <li>Email: <a href="dsub7546@gmail.com">support@tempgenie.com</a></li>
+        <li>Email: <a href="mailto:support@tempgenie.com">support@tempgenie.com</a></li>
         <li>Twitter: <a href="https://twitter.com/tempgenie" target="_blank">@TempGenie</a></li>
       </ul>
     </section>
@@ -145,5 +182,28 @@
   <footer>
     <p>&copy; 2024 TempGenie. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    function generateEmail() {
+      const domains = ["@tempmail.com", "@mailinator.com", "@example.com"];
+      const randomUser = Math.random().toString(36).substring(2, 10);
+      const randomDomain = domains[Math.floor(Math.random() * domains.length)];
+      document.getElementById("emailOutput").innerText = `${randomUser}${randomDomain}`;
+    }
+
+    function generatePhoneNumber() {
+      const randomPhone = `+1-${Math.floor(100 + Math.random() * 900)}-${Math.floor(1000 + Math.random() * 9000)}`;
+      document.getElementById("phoneOutput").innerText = randomPhone;
+    }
+
+    function generatePassword() {
+      const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+      let password = "";
+      for (let i = 0; i < 12; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById("passwordOutput").innerText = password;
+    }
+  </script>
 </body>
 </html>
