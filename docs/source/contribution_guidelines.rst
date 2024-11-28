@@ -14,6 +14,6 @@ We welcome contributions from everyone! Follow the steps below to contribute to 
 2. **Clone Your Fork**  
    Clone the repository to your local machine:
    
-   ```bash
+   .. code-block:: bash
    git clone https://github.com/Daeseob01/TempGenie.git
    cd TempGenie
