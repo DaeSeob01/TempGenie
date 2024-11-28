@@ -90,7 +90,7 @@ This section provides essential maintenance procedures and troubleshooting tips 
 
    If you have followed all the troubleshooting steps and the issue persists, you can reach out for support:
 
-   - **Email**: support@tempgenie.com
+   - **Email**: dsub7546@gmail.com
    - **GitHub Issues**: Report any bugs or issues on the [GitHub Issues page](https://github.com/DaeSeob01/TempGenie/issues)
    - **Forum**: Visit the community forum at [forum.tempgenie.com](https://forum.tempgenie.com) for further assistance.
 
