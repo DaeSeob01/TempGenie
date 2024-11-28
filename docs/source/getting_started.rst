@@ -12,4 +12,4 @@ To get started, you need to install the necessary dependencies.
    First, clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/YourUsername/TempGenie.git
+   git clone https://github.com/DaeSeob01/TempGenie.git
