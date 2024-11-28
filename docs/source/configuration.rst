@@ -53,7 +53,7 @@ This guide provides an overview of how to configure TempGenie to suit your needs
 
    You can add custom settings for data generation in the configuration file. For example, if you want to customize the random name generation logic, you can modify the `generate_names()` function in `config.py`:
 
-   ```python
+   .. code-block:: python
    def generate_names(num):
        # Custom name generation logic
        return ['Custom Name {}'.format(i) for i in range(num)]
