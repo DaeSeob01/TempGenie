@@ -12,7 +12,6 @@ Frequently Asked Questions
    
       ```bash
       git clone https://github.com/DaeSeob01/TempGenie.git
-      ```
    
    2. Navigate to the project directory:
    
