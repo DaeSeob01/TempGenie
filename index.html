@@ -89,14 +89,10 @@
       border-radius: 5px;
     }
 
-    .community-links a {
-      color: #007bff;
-      text-decoration: none;
+    .output {
+      margin-top: 1rem;
       font-weight: bold;
-    }
-
-    .community-links a:hover {
-      text-decoration: underline;
+      color: #007bff;
     }
 
     footer {
@@ -114,6 +110,19 @@
 
     footer a:hover {
       text-decoration: underline;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -133,41 +142,58 @@
   </nav>
 
   <main>
-    <section id="home">
-      <h2>Mission Statement</h2>
-      <p>TempGenie provides secure, temporary emails, phone numbers, and passwords, empowering users to protect their personal information while enjoying a seamless and secure sign-up process across the web.</p>
-      <p><a href="https://tempgenie.readthedocs.io">Read the Documentation</a> | <a href="https://github.com/DaeSeob01/TempGenie">Visit GitHub Repository</a></p>
-    </section>
-
     <section id="features" class="features">
       <h2>Features</h2>
       <ul>
-        <li><strong>Temporary Email:</strong> Generate disposable email addresses for temporary use.</li>
-        <li><strong>Temporary Phone Number:</strong> Get temporary phone numbers for verification.</li>
-        <li><strong>Password Suggestion:</strong> Create secure passwords with customizable keywords.</li>
+        <li>
+          <strong>Temporary Email:</strong>
+          <button onclick="generateEmail()">Generate Email</button>
+          <div class="output" id="emailOutput"></div>
+        </li>
+        <li>
+          <strong>Temporary Phone Number:</strong>
+          <button onclick="generatePhone()">Generate Phone</button>
+          <div class="output" id="phoneOutput"></div>
+        </li>
+        <li>
+          <strong>Password Suggestion:</strong>
+          <button onclick="generatePassword()">Generate Password</button>
+          <div class="output" id="passwordOutput"></div>
+        </li>
       </ul>
-    </section>
-
-    <section id="community">
-      <h2>Community</h2>
-      <p>Join our active community to share ideas and provide feedback.</p>
-      <div class="community-links">
-        <p><a href="https://github.com/DaeSeob01/TempGenie/discussions">GitHub Discussions</a> - Participate in discussions with developers and users.</p>
-        <p><a href="#">Mailing List</a> - Stay updated with the latest announcements.</p>
-        <p><a href="#">Chat on Discord</a> - Real-time support and collaboration.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Feel free to reach out for support or inquiries:</p>
-      <p>Email: <a href="mailto:support@tempgenie.com">support@tempgenie.com</a></p>
-      <p>Twitter: <a href="https://twitter.com/tempgenie">@TempGenie</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 TempGenie | <a href="https://tempgenie.readthedocs.io">Documentation</a> | <a href="https://github.com/DaeSeob01/TempGenie">GitHub</a></p>
+    <p>&copy; 2024 TempGenie | <a href="#">Documentation</a> | <a href="#">GitHub</a></p>
   </footer>
+
+  <script>
+    // Function to generate a temporary email
+    function generateEmail() {
+      const domains = ["@tempmail.com", "@tempmail.net", "@tempmail.org"];
+      const randomName = Math.random().toString(36).substring(2, 10);
+      const randomDomain = domains[Math.floor(Math.random() * domains.length)];
+      document.getElementById("emailOutput").textContent = `${randomName}${randomDomain}`;
+    }
+
+    // Function to generate a temporary phone number
+    function generatePhone() {
+      const randomPhone = `+1-${Math.floor(100 + Math.random() * 900)}-${Math.floor(
+        100 + Math.random() * 900
+      )}-${Math.floor(1000 + Math.random() * 9000)}`;
+      document.getElementById("phoneOutput").textContent = randomPhone;
+    }
+
+    // Function to generate a secure password
+    function generatePassword() {
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+      let password = "";
+      for (let i = 0; i < 12; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById("passwordOutput").textContent = password;
+    }
+  </script>
 </body>
 </html>
