@@ -1,59 +1,19 @@
-Configuration Guide
-===================
+Contribution Guidelines
+=======================
 
-This guide provides an overview of how to configure TempGenie to suit your needs.
+Thank you for considering contributing to TempGenie! By participating in this project, you agree to follow these guidelines. This ensures that the contribution process is smooth, and that the codebase remains stable and high-quality.
 
-1. **Configuration File Overview**
+How to Contribute
+-----------------
 
-   TempGenie uses a `config.py` file to manage settings and customization options. The configuration file controls the following aspects:
+We welcome contributions from everyone! Follow the steps below to contribute to the TempGenie project:
 
-   - The types of data to generate (e.g., names, emails, phone numbers).
-   - The number of records to generate.
-   - Optional custom settings for data formatting.
+1. **Fork the Repository**  
+   Start by forking the repository to your own GitHub account. You can do this by clicking the "Fork" button on the top-right corner of the repository page.
 
-   You can find the `config.py` file in the root directory of the project.
-
-2. **Available Configuration Options**
-
-   Below are the available configuration options you can modify in `config.py`:
-
-   - **`data_types`**:
-     - Controls which types of data are generated.
-     - Options include:
-       - `'names'`: Generates random names.
-       - `'emails'`: Generates random email addresses.
-       - `'phones'`: Generates random phone numbers.
-       - `'addresses'`: Generates random addresses.
-     - Example:
-     
-       ```python
-       data_types = ['names', 'emails', 'phones']
-       ```
-
-   - **`num_records`**:
-     - Defines the number of records to generate.
-     - Example:
-     
-       ```python
-       num_records = 1000
-       ```
-
-   - **`output_format`**:
-     - Defines the output format of the generated data.
-     - Options:
-       - `'csv'`: Save data as a CSV file.
-       - `'json'`: Save data as a JSON file.
-     - Example:
-     
-       ```python
-       output_format = 'csv'
-       ```
-
-3. **Customizing Data Generation**
-
-   You can add custom settings for data generation in the configuration file. For example, if you want to customize the random name generation logic, you can modify the `generate_names()` function in `config.py`:
-
-   ```python
-   def generate_names(num):
-       # Custom name generation logic
-       return ['Custom Name {}'.format(i) for i in range(num)]
+2. **Clone Your Fork**  
+   Clone the repository to your local machine:
+   
+   ```bash
+   git clone https://github.com/your-username/TempGenie.git
+   cd TempGenie
