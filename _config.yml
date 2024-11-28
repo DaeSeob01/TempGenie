@@ -1,0 +1,19 @@
+title: TempGenie
+description: >
+  TempGenie is an open-source project for generating temporary data.
+baseurl: "/TempGenie"
+url: "https://<GitHub_Username>.github.io"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+features:
+  - name: Temporary Data Generator
+    description: Quickly generate temporary and dummy data.
+  - name: Secure Storage
+    description: Protect sensitive data during development.
+
+contact:
+  email: tempgenie.support@example.com
+  slack: https://slack.tempgenie.com
