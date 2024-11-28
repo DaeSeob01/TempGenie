@@ -5,22 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TempGenie - Features</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-    nav { background: #007bff; color: #fff; padding: 1rem; text-align: center; }
-    nav a { color: #ffcc00; margin: 0 1rem; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
-    header { padding: 2rem; text-align: center; background: #f4f4f4; }
-    header h1 { margin: 0; color: #007bff; }
-    main { padding: 2rem; }
-    footer { text-align: center; background: #333; color: #fff; padding: 1rem 0; }
-    ul { list-style: none; padding: 0; }
-    ul li { margin: 0.5rem 0; }
-    .feature-section { margin-bottom: 2rem; }
-    .feature-section h2 { color: #007bff; }
-    .feature-section p { margin: 0.5rem 0; }
-    button { padding: 0.5rem 1rem; background-color: #007bff; color: white; border: none; cursor: pointer; }
-    button:hover { background-color: #0056b3; }
-    .output { font-size: 1.2rem; margin-top: 1rem; }
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    nav {
+      background-color: #e8491d;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+    }
+    /* Button style */
+    .btn {
+      background-color: #16a085;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #1abc9c;
+    }
+    .btn:active {
+      background-color: #16a085;
+    }
+    /* Feature sections */
+    .feature-section {
+      margin-bottom: 2rem;
+    }
+    .feature-section h2 {
+      color: #e8491d;
+    }
+    .feature-section p {
+      margin: 0.5rem 0;
+    }
+    .output {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -34,31 +96,33 @@
     <h1>TempGenie Features</h1>
     <p>Generate temporary credentials: emails, phone numbers, and passwords with ease.</p>
   </header>
-  <main>
-    <!-- Temporary Email Section -->
-    <div class="feature-section">
-      <h2>Generate Temporary Email</h2>
-      <p>This feature allows you to generate a temporary email address for one-time use, perfect for registering on websites without revealing your personal email.</p>
-      <button onclick="generateTempEmail()">Generate Temporary Email</button>
-      <div class="output" id="temp-email-output"></div>
-    </div>
+  <div class="container">
+    <main>
+      <!-- Temporary Email Section -->
+      <div class="feature-section">
+        <h2>Generate Temporary Email</h2>
+        <p>This feature allows you to generate a temporary email address for one-time use, perfect for registering on websites without revealing your personal email.</p>
+        <button class="btn" onclick="generateTempEmail()">Generate Temporary Email</button>
+        <div class="output" id="temp-email-output"></div>
+      </div>
 
-    <!-- Temporary Phone Number Section -->
-    <div class="feature-section">
-      <h2>Generate Temporary Phone Number</h2>
-      <p>This feature provides a disposable phone number for temporary use, helping protect your privacy when verifying accounts online.</p>
-      <button onclick="generateTempPhoneNumber()">Generate Temporary Phone Number</button>
-      <div class="output" id="temp-phone-output"></div>
-    </div>
+      <!-- Temporary Phone Number Section -->
+      <div class="feature-section">
+        <h2>Generate Temporary Phone Number</h2>
+        <p>This feature provides a disposable phone number for temporary use, helping protect your privacy when verifying accounts online.</p>
+        <button class="btn" onclick="generateTempPhoneNumber()">Generate Temporary Phone Number</button>
+        <div class="output" id="temp-phone-output"></div>
+      </div>
 
-    <!-- Temporary Password Section -->
-    <div class="feature-section">
-      <h2>Generate Temporary Password</h2>
-      <p>Create strong and secure passwords with the click of a button. This feature suggests a random, complex password for your accounts.</p>
-      <button onclick="generateTempPassword()">Generate Temporary Password</button>
-      <div class="output" id="temp-password-output"></div>
-    </div>
-  </main>
+      <!-- Temporary Password Section -->
+      <div class="feature-section">
+        <h2>Generate Temporary Password</h2>
+        <p>Create strong and secure passwords with the click of a button. This feature suggests a random, complex password for your accounts.</p>
+        <button class="btn" onclick="generateTempPassword()">Generate Temporary Password</button>
+        <div class="output" id="temp-password-output"></div>
+      </div>
+    </main>
+  </div>
   <footer>
     <p>&copy; 2024 TempGenie. All Rights Reserved.</p>
   </footer>
