@@ -8,221 +8,142 @@
     /* General Styles */
     body {
       font-family: Arial, sans-serif;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background-color: #f8f9fa;
-      color: #333;
     }
 
     header {
       background: #007bff;
-      color: white;
+      color: #fff;
       padding: 1rem 0;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
     }
 
     header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
+      margin: 0.5rem 0;
     }
 
-    nav {
-      background: #0069d9;
-      padding: 0.5rem;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin: 0 1rem;
-    }
-
-    nav ul li a {
-      color: white;
+    header a {
+      color: #ffcc00;
       text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
+      margin: 0 0.5rem;
     }
 
     main {
       padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     section {
       margin-bottom: 2rem;
     }
 
-    section h2 {
-      font-size: 1.8rem;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    a {
       color: #007bff;
-      border-bottom: 2px solid #007bff;
-      padding-bottom: 0.5rem;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #community {
+      background: #f4f4f4;
+      padding: 2rem;
+      border-radius: 10px;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #007bff;
-      color: white;
-      margin-top: 2rem;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    .output {
-      margin-top: 1rem;
-      font-weight: bold;
-      color: #007bff;
-    }
-
-    .community ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .community ul li {
-      margin: 1rem 0;
-    }
-
-    .contact ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .contact ul li {
-      margin: 1rem 0;
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>TempGenie</h1>
-    <p>Intuitive, all-in-one temporary information generation platform</p>
+    <h1>Welcome to TempGenie!</h1>
+    <p>TempGenie is an open-source project for generating temporary data.</p>
+    <a href="https://tempg.readthedocs.io/en/latest/" target="_blank">Read the Documentation</a> |
+    <a href="https://github.com/DaeSeob01" target="_blank">Visit GitHub Repository</a>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#community">Community</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section id="home">
-      <h2>Welcome to TempGenie</h2>
-      <p>Your go-to solution for generating temporary email addresses, phone numbers, and strong passwords effortlessly.</p>
-      <p><a href="#features">Explore Features</a> | <a href="https://github.com/YourRepoLink">Visit GitHub Repository</a></p>
-    </section>
-
     <section id="features">
       <h2>Features</h2>
       <ul>
-        <li>
-          <strong>Temporary Email:</strong>
-          <button onclick="generateEmail()">Generate Email</button>
-          <div class="output" id="emailOutput"></div>
-        </li>
-        <li>
-          <strong>Temporary Phone Number:</strong>
-          <button onclick="generatePhone()">Generate Phone</button>
-          <div class="output" id="phoneOutput"></div>
-        </li>
-        <li>
-          <strong>Password Suggestion:</strong>
-          <button onclick="generatePassword()">Generate Password</button>
-          <div class="output" id="passwordOutput"></div>
-        </li>
+        <li>Generate temporary and dummy data</li>
+        <li>Secure data storage for sensitive information</li>
+        <li>Highly customizable configurations</li>
       </ul>
     </section>
 
     <section id="community">
       <h2>Community</h2>
-      <ul>
-        <li><a href="https://github.com/YourRepoLink/discussions">Join our Discussions</a></li>
-        <li><a href="mailto:newsletter@tempgenie.com">Subscribe to our Mailing List</a></li>
-        <li><a href="https://discord.com/invite/tempgenie">Join our Discord Server</a></li>
-      </ul>
+      <p>Join the TempGenie community and contribute to our open-source mission. Whether you're a developer, user, or supporter, there's a place for you here!</p>
+
+      <div>
+        <h3>Discussion Forums</h3>
+        <p>Connect with fellow developers and users. Share ideas, ask questions, or offer feedback in our discussion forums.</p>
+        <ul>
+          <li><a href="https://github.com/YourRepoLink/discussions" target="_blank">GitHub Discussions</a></li>
+          <li><a href="https://discourse.yourproject.com" target="_blank">Discourse Forum</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Mailing Lists</h3>
+        <p>Stay updated with the latest announcements, release notes, and support resources by subscribing to our mailing lists.</p>
+        <ul>
+          <li><a href="mailto:newsletter@tempgenie.com" target="_blank">Announcements</a>: Get notified about new features and updates.</li>
+          <li><a href="mailto:support@tempgenie.com" target="_blank">Support</a>: Reach out for help or troubleshooting assistance.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Other Communication Channels</h3>
+        <p>Engage with us on social platforms and instant messaging tools to stay connected with the community.</p>
+        <ul>
+          <li><a href="https://discord.com/invite/tempgenie" target="_blank">Discord</a>: Join real-time chats with the team and other users.</li>
+          <li><a href="https://slack.tempgenie.com" target="_blank">Slack</a>: Collaborate and share feedback.</li>
+          <li><a href="https://gitter.im/tempgenie/community" target="_blank">Gitter</a>: Participate in topic-specific discussions.</li>
+        </ul>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to reach out!</p>
       <ul>
-        <li>Email: <a href="mailto:support@tempgenie.com">support@tempgenie.com</a></li>
-        <li>Twitter: <a href="https://twitter.com/tempgenie">@TempGenie</a></li>
-        <li>GitHub: <a href="https://github.com/YourRepoLink">Our Repository</a></li>
+        <li>Email: <a href="dsub7546@gmail.com">support@tempgenie.com</a></li>
+        <li>Twitter: <a href="https://twitter.com/tempgenie" target="_blank">@TempGenie</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 TempGenie | <a href="#">Documentation</a> | <a href="#">GitHub</a></p>
+    <p>&copy; 2024 TempGenie. All Rights Reserved.</p>
   </footer>
-
-  <script>
-    // Function to generate a temporary email
-    function generateEmail() {
-      const domains = ["@tempmail.com", "@tempmail.net", "@tempmail.org"];
-      const randomName = Math.random().toString(36).substring(2, 10);
-      const randomDomain = domains[Math.floor(Math.random() * domains.length)];
-      document.getElementById("emailOutput").textContent = `${randomName}${randomDomain}`;
-    }
-
-    // Function to generate a temporary phone number
-    function generatePhone() {
-      const randomPhone = `+1-${Math.floor(100 + Math.random() * 900)}-${Math.floor(
-        100 + Math.random() * 900
-      )}-${Math.floor(1000 + Math.random() * 9000)}`;
-      document.getElementById("phoneOutput").textContent = randomPhone;
-    }
-
-    // Function to generate a secure password
-    function generatePassword() {
-      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
-      let password = "";
-      for (let i = 0; i < 12; i++) {
-        password += chars.charAt(Math.floor(Math.random() * chars.length));
-      }
-      document.getElementById("passwordOutput").textContent = password;
-    }
-  </script>
 </body>
 </html>
