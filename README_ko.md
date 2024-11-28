@@ -85,7 +85,7 @@ TempGenie의 발전을 위해 여러분의 기여를 환영합니다! 다음 단
       ```bash
       git commit -m "새로운 기능 추가"
       git push origin feature/new-feature
-##문서화
+## 문서화
 이 프로젝트의 전체 문서는 ReadTheDocs에 호스팅되어 있습니다:
 
 [📄 ReadTheDocs에서 문서 보기](https://tempg.readthedocs.io)
