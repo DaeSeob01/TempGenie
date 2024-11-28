@@ -1,28 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TempGenie</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #007bff;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #0069d9;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #007bff;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 0.5rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features ul li {
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .community-links a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .community-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #007bff;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to TempGenie!</h1>
-  <p>TempGenie is an open-source project for generating temporary data.</p>
+  <header>
+    <h1>TempGenie</h1>
+    <p>Intuitive, all-in-one temporary information generation platform</p>
+  </header>
 
-  <!-- Documentation Link -->
-  <p>
-    <a href="https://tempg.readthedocs.io/en/latest/">Read the Documentation</a>
-  </p>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- GitHub Repository Link -->
-  <p>
-    <a href="https://github.com/DaeSeob01/TempGenie">Visit GitHub Repository</a>
-  </p>
+  <main>
+    <section id="home">
+      <h2>Mission Statement</h2>
+      <p>TempGenie provides secure, temporary emails, phone numbers, and passwords, empowering users to protect their personal information while enjoying a seamless and secure sign-up process across the web.</p>
+      <p><a href="https://tempgenie.readthedocs.io">Read the Documentation</a> | <a href="https://github.com/DaeSeob01/TempGenie">Visit GitHub Repository</a></p>
+    </section>
 
-  <!-- Project Features -->
-  <h2>Features</h2>
-  <ul>
-    <li>Generate temporary and dummy data</li>
-    <li>Secure data storage for sensitive information</li>
-    <li>Highly customizable configurations</li>
-  </ul>
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Temporary Email:</strong> Generate disposable email addresses for temporary use.</li>
+        <li><strong>Temporary Phone Number:</strong> Get temporary phone numbers for verification.</li>
+        <li><strong>Password Suggestion:</strong> Create secure passwords with customizable keywords.</li>
+      </ul>
+    </section>
+
+    <section id="community">
+      <h2>Community</h2>
+      <p>Join our active community to share ideas and provide feedback.</p>
+      <div class="community-links">
+        <p><a href="https://github.com/DaeSeob01/TempGenie/discussions">GitHub Discussions</a> - Participate in discussions with developers and users.</p>
+        <p><a href="#">Mailing List</a> - Stay updated with the latest announcements.</p>
+        <p><a href="#">Chat on Discord</a> - Real-time support and collaboration.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out for support or inquiries:</p>
+      <p>Email: <a href="mailto:support@tempgenie.com">support@tempgenie.com</a></p>
+      <p>Twitter: <a href="https://twitter.com/tempgenie">@TempGenie</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 TempGenie | <a href="https://tempgenie.readthedocs.io">Documentation</a> | <a href="https://github.com/DaeSeob01/TempGenie">GitHub</a></p>
+  </footer>
 </body>
 </html>
