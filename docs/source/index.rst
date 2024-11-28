@@ -17,7 +17,7 @@ documentation for details.
 
    about
    getting_started
-   usage
+   how_to_use
    technical_overview
    API
    configuration
