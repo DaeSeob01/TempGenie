@@ -26,3 +26,6 @@ language = 'en'
 
 html_theme = 'sphinx_material'
 html_static_path = ['_static']
+html_sidebars = {
+   '**': ['globaltoc.html', 'searchbox.html'],
+}
