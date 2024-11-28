@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TempGenie - Contact</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    nav {
+      background-color: #e8491d;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+    }
+    /* Button style */
+    .btn {
+      background-color: #16a085;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #1abc9c;
+    }
+    .btn:active {
+      background-color: #16a085;
+    }
+    /* Contact form styles */
+    .contact-section { margin-bottom: 2rem; }
+    .contact-section h2 { color: #e8491d; font-size: 2rem; }
+    .contact-section p { margin: 0.5rem 0; }
+    .contact-section form { max-width: 600px; margin: 0 auto; }
+    .contact-section label { display: block; margin-bottom: 0.5rem; font-size: 1rem; }
+    .contact-section input, .contact-section textarea { 
+      width: 100%; 
+      padding: 0.8rem; 
+      margin-bottom: 1rem; 
+      border: 1px solid #ccc; 
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact-section button {
+      padding: 0.8rem 1.5rem;
+      background-color: #e8491d;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact-section button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <header>
+    <h1>Contact Us</h1>
+    <p>Get in touch with the TempGenie team.</p>
+  </header>
+  <div class="container">
+    <main>
+      <div class="contact-section">
+        <h2>Contact Form</h2>
+        <p>If you have any questions or need support, please fill out the form below, and we'll get back to you as soon as possible.</p>
+        <form id="contact-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-section">
+        <h2>Alternative Communication</h2>
+        <p>If you prefer, you can reach us through the following channels:</p>
+        <ul>
+          <li><strong>Email:</strong> support@tempgenie.com</li>
+          <li><strong>Slack:</strong> <a href="https://slack.com" target="_blank">TempGenie Slack</a></li>
+          <li><strong>Discord:</strong> <a href="https://discord.com" target="_blank">TempGenie Discord</a></li>
+          <li><strong>GitHub Discussions:</strong> <a href="https://github.com/TempGenie/TempGenie/discussions" target="_blank">GitHub Discussions</a></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2024 TempGenie. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Contact form submission handler (for demonstration purposes)
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevent the form from submitting normally
+      alert("Thank you for reaching out! We will get back to you soon.");
+    });
+  </script>
+</body>
+</html>
