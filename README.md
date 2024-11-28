@@ -1,4 +1,4 @@
-[English](README_en.md) | [한국어](README_ko.md)
+[English](README.md) | [한국어](README_ko.md)
 
 # TempGenie
 **An All-in-One Solution for Temporary Credentials**
