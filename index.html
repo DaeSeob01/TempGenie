@@ -76,25 +76,6 @@
       padding-bottom: 0.5rem;
     }
 
-    .features ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .features ul li {
-      background: #f8f9fa;
-      border: 1px solid #ddd;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      border-radius: 5px;
-    }
-
-    .output {
-      margin-top: 1rem;
-      font-weight: bold;
-      color: #007bff;
-    }
-
     footer {
       text-align: center;
       padding: 1rem;
@@ -124,6 +105,30 @@
     button:hover {
       background-color: #0056b3;
     }
+
+    .output {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .community ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .community ul li {
+      margin: 1rem 0;
+    }
+
+    .contact ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact ul li {
+      margin: 1rem 0;
+    }
   </style>
 </head>
 <body>
@@ -142,7 +147,13 @@
   </nav>
 
   <main>
-    <section id="features" class="features">
+    <section id="home">
+      <h2>Welcome to TempGenie</h2>
+      <p>Your go-to solution for generating temporary email addresses, phone numbers, and strong passwords effortlessly.</p>
+      <p><a href="#features">Explore Features</a> | <a href="https://github.com/YourRepoLink">Visit GitHub Repository</a></p>
+    </section>
+
+    <section id="features">
       <h2>Features</h2>
       <ul>
         <li>
@@ -160,6 +171,24 @@
           <button onclick="generatePassword()">Generate Password</button>
           <div class="output" id="passwordOutput"></div>
         </li>
+      </ul>
+    </section>
+
+    <section id="community">
+      <h2>Community</h2>
+      <ul>
+        <li><a href="https://github.com/YourRepoLink/discussions">Join our Discussions</a></li>
+        <li><a href="mailto:newsletter@tempgenie.com">Subscribe to our Mailing List</a></li>
+        <li><a href="https://discord.com/invite/tempgenie">Join our Discord Server</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <ul>
+        <li>Email: <a href="mailto:support@tempgenie.com">support@tempgenie.com</a></li>
+        <li>Twitter: <a href="https://twitter.com/tempgenie">@TempGenie</a></li>
+        <li>GitHub: <a href="https://github.com/YourRepoLink">Our Repository</a></li>
       </ul>
     </section>
   </main>
