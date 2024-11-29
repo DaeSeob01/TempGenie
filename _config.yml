@@ -4,7 +4,7 @@ description: >
 baseurl: "/TempGenie"
 url: "https://DaeSeob01.github.io"
 host: "https://DaeSeob01.github.io"
-theme: minima
+theme: Architect
 markdown: kramdown
 plugins:
   - jekyll-feed
