@@ -1,7 +1,6 @@
 ---
 layout: default
 title: TempGenie - Homepage
-permalink: /
 ---
 
 # Welcome to TempGenie!
