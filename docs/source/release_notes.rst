@@ -57,5 +57,5 @@ To upgrade to the latest version of TempGenie, follow these steps:
 
 1. **Upgrade via pip**:
    
-   ```bash
-   pip install --upgrade tempgenie
+   .. code-block:: bash
+       pip install --upgrade tempgenie
