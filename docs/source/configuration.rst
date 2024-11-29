@@ -17,7 +17,7 @@ This guide provides an overview of how to configure TempGenie to suit your needs
 
    Below are the available configuration options you can modify in ``config.py``:
 
-   - **`data_types`**:
+   - **``data_types``**:
      - Controls which types of data are generated.
      - Options include:
        - ``'names'``: Generates random names.
