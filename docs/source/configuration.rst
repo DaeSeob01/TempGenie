@@ -17,7 +17,7 @@ This guide provides an overview of how to configure TempGenie to suit your needs
 
    Below are the available configuration options you can modify in ``config.py``:
 
-   - ``**data_types**``:
+   - **data_types**:
      - Controls which types of data are generated.
      - Options include:
        - ``'names'``: Generates random names.
@@ -30,7 +30,7 @@ This guide provides an overview of how to configure TempGenie to suit your needs
 
            data_types = ['names', 'emails', 'phones']
 
-   - **``num_records``**:
+   - **num_records**:
      - Defines the number of records to generate.
      - Example:
 
@@ -38,7 +38,7 @@ This guide provides an overview of how to configure TempGenie to suit your needs
 
            num_records = 1000
 
-   - **``output_format``**:
+   - **output_format**:
      - Defines the output format of the generated data.
      - Options:
        - ``'csv'``: Save data as a CSV file.
