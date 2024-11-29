@@ -19,7 +19,4 @@ contact:
   email: tempgenie.support@example.com
   slack: https://slack.tempgenie.com
 
-# 빌드에서 제외할 파일 또는 폴더 설정
-exclude:
-  - folder/               # 특정 폴더 전체를 제외
 
