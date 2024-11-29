@@ -13,4 +13,4 @@ To get started, you need to install the necessary dependencies.
 
    .. code-block:: bash
 
-   git clone https://github.com/DaeSeob01/TempGenie.git
+       git clone https://github.com/DaeSeob01/TempGenie.git
