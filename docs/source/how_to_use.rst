@@ -11,5 +11,6 @@ Once you have successfully installed the project and set up the environment, you
 1. **Running the Application**
    After setting up the project, run the following command to start the application:
 
-   .. code-block:: bash  
+   .. code-block:: bash
+
        python main.py
