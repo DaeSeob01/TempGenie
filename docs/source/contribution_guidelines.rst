@@ -15,5 +15,5 @@ We welcome contributions from everyone! Follow the steps below to contribute to 
    Clone the repository to your local machine:
    
    .. code-block:: bash
-   git clone https://github.com/Daeseob01/TempGenie.git
-   cd TempGenie
+       git clone https://github.com/Daeseob01/TempGenie.git
+       cd TempGenie
