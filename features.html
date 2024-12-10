@@ -150,15 +150,27 @@
       document.getElementById("temp-phone-output").innerText = "Your temporary phone number: " + phoneNumber;
     }
 
-    // Function to generate a temporary password
-    function generateTempPassword() {
-      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
-      let password = "";
-      for (let i = 0; i < 12; i++) {
-        password += chars.charAt(Math.floor(Math.random() * chars.length));
-      }
-      document.getElementById("temp-password-output").innerText = "Your temporary password: " + password;
+    // Function to generate a temporary password with a user-specified keyword
+function generateTempPassword() {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+  const keyword = prompt("Enter a keyword to include in your password:"); // Prompt user for a keyword
+  let password = keyword; // Start the password with the keyword
+
+  const remainingLength = 12 - keyword.length; // Calculate remaining characters to reach 12
+  if (remainingLength > 0) {
+    for (let i = 0; i < remainingLength; i++) {
+      password += chars.charAt(Math.floor(Math.random() * chars.length));
     }
+  } else {
+    alert("Keyword is too long. Using only the first 12 characters.");
+    password = keyword.substring(0, 12); // Trim the keyword if it's too long
+  }
+
+  // Display the password
+  document.getElementById("temp-password-output").innerText =
+    "Your temporary password: " + password;
+}
+
   </script>
 </body>
 </html>
